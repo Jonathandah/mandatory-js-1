@@ -36,12 +36,14 @@ ul.appendChild(li);//add Vegetables to list
 let thead = document.querySelector("thead");
 thead.removeChild(thead.childNodes[1]); //remove existing td emelents
 
+let tableRow = document.createElement("tr");
 let th1 = document.createElement("th"); //add new th element
 let th2 = document.createElement("th");
 th1.textContent = "Name";
 th2.textContent = "Email";
-thead.appendChild(th1);
-thead.appendChild(th2);
+tableRow.appendChild(th1);
+tableRow.appendChild(th2);
+thead.appendChild(tableRow);
 
 //add main.css
 let head = document.querySelector("head")
